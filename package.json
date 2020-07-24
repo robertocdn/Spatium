@@ -1,0 +1,33 @@
+{
+  "name": "spatium",
+  "version": "1.0.0",
+  "description": "[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/robertocdn/Spatium)",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertocdn/Spatium.git"
+  },
+  "author": "Roberto C. D. Neto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertocdn/Spatium/issues"
+  },
+  "homepage": "https://github.com/robertocdn/Spatium#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.7",
+    "@types/node": "^14.0.26",
+    "nodemon": "^2.0.4",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
